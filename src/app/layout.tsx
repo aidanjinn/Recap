@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -52,22 +53,22 @@ export default function RootLayout({
               <h2 className="text-lg font-semibold">News Categories</h2>
               <div className="space-y-1">
                 <Button variant="ghost" className="w-full justify-start" asChild>
-                  <a href="/?category=tech">Technology</a>
+                  <Link href="/?category=tech">Technology</Link>
                 </Button>
                 <Button variant="ghost" className="w-full justify-start" asChild>
-                  <a href="/?category=finance">Finance</a>
+                  <Link href="/?category=finance">Finance</Link>
                 </Button>
                 <Button variant="ghost" className="w-full justify-start" asChild>
-                  <a href="/?category=world">World News</a>
+                  <Link href="/?category=world">World News</Link>
                 </Button>
                 <Button variant="ghost" className="w-full justify-start" asChild>
-                  <a href="/?category=entertainment">Entertainment</a>
+                  <Link href="/?category=entertainment">Entertainment</Link>
                 </Button>
                 <Button variant="ghost" className="w-full justify-start" asChild>
-                  <a href="/?category=sports">Sports</a>
+                  <Link href="/?category=sports">Sports</Link>
                 </Button>
                 <Button variant="ghost" className="w-full justify-start" asChild>
-                  <a href="/?category=weather">Weather</a>
+                  <Link href="/?category=weather">Weather</Link>
                 </Button>
               </div>
             </div>

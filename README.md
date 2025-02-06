@@ -4,7 +4,7 @@
 
 News Summary Frontend 🌐
 
-📰 Frontend for the ![News Summary API](https://github.com/aidanjinn/newsAPI/tree/main)
+📰 Frontend for the [News Summary API](https://github.com/aidanjinn/newsAPI/tree/main)
 🚀 Built with Next.js, shadcn, and hosted on Vercel.
 
 This project provides a sleek and modern frontend interface to interact with the News Summary API. It allows users to browse, search, and view summarized news articles in a clean and responsive design.

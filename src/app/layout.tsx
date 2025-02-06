@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { Suspense } from "react";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -74,7 +75,9 @@ export default function RootLayout({
             </div>
           </Card>
           <main className="flex-1 p-6 md:p-6 w-full">
-            {children}
+            <Suspense fallback={<div>Loading...</div>}>
+              {children}
+            </Suspense>
           </main>
         </div>
       </body>
